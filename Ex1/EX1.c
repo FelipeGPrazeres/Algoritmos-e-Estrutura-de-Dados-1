@@ -53,7 +53,7 @@ void adicionarAlunos(int contador, Aluno alunos[])
 
 }
 
-void mairMedia(const Aluno alunos[], int contador)
+void maiorMedia(const Aluno alunos[], int contador)
 {
     if (contador == 0)
     {
@@ -73,7 +73,7 @@ void mairMedia(const Aluno alunos[], int contador)
         }
     }
 
-    printf("Aluno com maior média: %s; Média: %.2f\n",alunos[indiceMaior].nome);
+    printf("Aluno com maior média: %s\n",alunos[indiceMaior].nome);
     for (int i = 0; i < NUM_NOTAS; i++) {
         printf("Nota %d: %.2f\n", i + 1, alunos[indiceMaior].notas[i]);
     }
